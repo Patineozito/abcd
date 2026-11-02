@@ -352,6 +352,13 @@
         // Para adicionar um presente, copie um objeto e altere os dados.
         // ==================================================
 
+        const nomesCategorias = {
+            "Roupas": "Roupas (tamanho: X)",
+            "Maquiagens": "Maquiagens e cosméticos",
+            "Brinquedos": "Brinquedos",
+            "Acessórios": "Acessórios e bijuterias"
+        };
+
         const presentes = [
             // BRINQUEDOS ============================================================
             { // Dumpling Squishy 
@@ -407,7 +414,7 @@
                 id: "brinq-8",
                 categoria: "Brinquedos",
                 nome: "Jogo Pula Macaco",
-                imagem: "imagens/presentes/",
+                imagem: "imagens/presentes/pula macaco.png",
                 link: "https://a.co/d/007juRB1"
             },
             // MAQUIAGENS ============================================================
@@ -418,114 +425,87 @@
                 imagem: "imagens/presentes/pincel rosa.png",
                 link: "https://www.mercadolivre.com.br/p/MLB73430841?matt_tool=38524122&pdp_filters=item_id:MLB4773506055&ua=ldcoy9ovWMgZNkdEmi7I35MlJ7l7iBAlvQL4E7WYdbcLTxPK#origin=share&sid=share&wid=MLB4773506055&action=copy"
             },
-            {
-                id: "maq-2",
-                categoria: "Maquiagens",
-                nome: "Nome da maquiagem 2",
-                imagem: "maquiagem2.jpg",
-                link: "https://www.exemplo.com"
-            },
             { // 
-                id: "maq-3",
+                id: "maq-2",
                 categoria: "Maquiagens",
                 nome: "Blush Líquido Hello Kitty",
                 imagem: "imagens/presentes/blush HK.png",
                 link: "https://br.shp.ee/YywXtfDf"
             },
-            { // 
-                id: "",
-                categoria: "Maquiagens",
-                nome: "",
-                imagem: "imagens/presentes/",
-                link: ""
-            },
-            { // 
-                id: "",
-                categoria: "Maquiagens",
-                nome: "",
-                imagem: "imagens/presentes/",
-                link: ""
-            },
-            { // 
-                id: "",
-                categoria: "",
-                nome: "",
-                imagem: "imagens/presentes/",
-                link: ""
-            },
+            
             
             // ROUPAS ============================================================
             {
                 id: "roupa-1",
                 categoria: "Roupas",
-                nome: "Nome do acessório",
-                imagem: "acessorio1.jpg",
-                link: "https://www.exemplo.com"
+                nome: "Conjunto de Verão",
+                imagem: "imagens/presentes/conjunto verao1",
+                link: "https://atacado.molekada.com.br/conjunto-verao-menina-amarelo-blusa-com-babado-e-shorts-ciclista-bicicleta-das-flores"
             },
             { // 
-                id: "",
-                categoria: "",
-                nome: "",
-                imagem: "imagens/presentes/",
-                link: ""
+                id: "roupa-2",
+                categoria: "Roupas",
+                nome: "Conjunto de Verão",
+                imagem: "imagens/presentes/conjunto verao2",
+                link: "https://atacado.molekada.com.br/conjunto-verao-menina-amarelo-cropped-over-e-shorts-com-filete-e-laco"
             },
             { // 
-                id: "",
-                categoria: "",
-                nome: "",
+                id: "roupa-3",
+                categoria: "Roupas",
+                nome: "Conjunto Brasil",
                 imagem: "imagens/presentes/",
-                link: ""
+                link: "https://atacado.molekada.com.br/conjunto-brasil-infantil-menina-amarelo-blusa-e-shorts-saia-com-amarracao-copa-do-mundo"
             },
             { // 
-                id: "",
-                categoria: "",
-                nome: "",
+                id: "roupa-4",
+                categoria: "Roupas",
+                nome: "Vestido Florido",
                 imagem: "imagens/presentes/",
-                link: ""
+                link: "https://atacado.molekada.com.br/vestido-alcinha-verao-menina-rosa-flores-coloridas"
             },
             { // 
-                id: "",
-                categoria: "",
-                nome: "",
+                id: "roupa-5",
+                categoria: "Roupas",
+                nome: "Macaquinho com Corações",
                 imagem: "imagens/presentes/",
-                link: ""
+                link: "https://atacado.molekada.com.br/macaquinho-verao-menina-rosa-alcinha-com-babado-coracoes"
             },
             { // 
-                id: "",
-                categoria: "",
-                nome: "",
+                id: "roupa-6",
+                categoria: "Roupas",
+                nome: "Macaquinhos com Flores",
                 imagem: "imagens/presentes/",
-                link: ""
+                link: "https://atacado.molekada.com.br/conjunto-verao-menina-rosa-cropped-regata-e-shorts-com-babado-margaridas"
             },
             { // 
-                id: "",
-                categoria: "",
-                nome: "",
+                id: "roupa-7",
+                categoria: "Roupas",
+                nome: "Roupa de Banho - Melancia",
                 imagem: "imagens/presentes/",
-                link: ""
+                link: "https://www.centauro.com.br/biquini-cropped-manga-longa-vekyo-moda-praia-infantil-m17ysz-mktp.html"
+            },
+            { // 
+                id: "roupa-8",
+                categoria: "Roupas",
+                nome: "Roupa de Banho - Morango",
+                imagem: "imagens/presentes/",
+                link: "https://www.centauro.com.br/biquini-cropped-manga-longa-vekyo-moda-praia-infantil-m17ysz-mktp.html?cor=EZ"
             },
 
             // ARTE ============================================================
             { // 
-                id: "",
-                categoria: "",
-                nome: "",
-                imagem: "imagens/presentes/",
-                link: ""
+                id: "arte-1",
+                categoria: "Arte",
+                nome: "Tela De Pintura 40x50",
+                imagem: "imagens/presentes/telas.png",
+                link: "https://br.shp.ee/17x9Vt7C"
             },
             { // 
-                id: "",
-                categoria: "",
-                nome: "",
-                imagem: "imagens/presentes/",
-                link: ""
-            },
-            { // 
-                id: "",
-                categoria: "",
-                nome: "",
-                imagem: "imagens/presentes/",
-                link: ""
+                id: "arte-2",
+                categoria: "Arte",
+                nome: "Kit 10 Pincéis Artísticos",
+                imagem: "imagens/presentes/10 pinceis.png",
+                link: "https://br.shp.ee/uVDtp55Z"
             },
         ];
 
@@ -552,7 +532,7 @@
 
             const titulo = document.createElement("h3");
             titulo.className = "titulo-categoria";
-            titulo.textContent = nomeCategoria;
+            titulo.textContent = nomesCategorias[nomeCategoria] || nomeCategoria;
 
             const listaPresentes = document.createElement("div");
             listaPresentes.className = "lista-presentes";
